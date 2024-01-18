@@ -1,0 +1,27 @@
+<%- include("partials/header.ejs") %>
+<section style="background-color: aliceblue; color: black;">
+  <form action="/posts" method="post">
+  <div class="container col-xxl-8 px-4 py-5">
+    <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+      <div class="col-6">
+        <img src="images/writing.png" class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" width="300" height="300" loading="lazy">
+      </div>
+      <div class="col-6">
+        <div class="mb-3" style="width: 500px;">
+          <label for="exampleFormControlInput1" class="form-label"><h3>Title</h3></label>
+          <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Title" name="Title">
+        </div>
+        <div class="mb-3" style="width: 500px;">
+          <label for="exampleFormControlTextarea1" class="form-label">Compose</label>
+          <textarea class="form-control" id="exampleFormControlTextarea1" rows="5" name="Content" placeholder="Write your content here"></textarea>
+        </div>
+        <div>
+            <button type="submit" class="btn btn-success btn-lg px-4 me-md-2" fdprocessedid="0jwz6">Post</button>
+        </div>
+      </div>
+      </div>
+    </div>
+  </div>
+</form>
+  <section>
+<%- include("partials/footer.ejs") %>

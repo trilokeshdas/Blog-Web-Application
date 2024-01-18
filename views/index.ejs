@@ -1,0 +1,33 @@
+<%-  include("partials/header.ejs") %>
+
+    <div class="container col-xxl-8 px-4 py-5">
+        <% if(locals.userName && locals.userEmail && locals.userPassword){ %>
+        <h1>Welcome <%= userName %>⚡</h1>
+        <% } %>
+        <div class="row flex-lg-row-reverse align-items-center g-5 py-5 flex">
+          <div class="col-12 col-lg-6 flex" style="display:flex; justify-content: center;">
+            <img src="images/cover.png" class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" loading="lazy" style="height: 250px;" width="500px">
+          </div>
+          <div class="col-lg-6">
+            <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3">My Blog Web App</h1>
+            <p class="lead">Here we can create new blogs and see it. We can edit and delete the blogs. Sign up for free to start blogging</p>
+
+            <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+              <% if(locals.userName && locals.userEmail && locals.userPassword){ %>
+                <a href="/compose">
+                  <button type="button" class="btn btn-success btn-lg px-4 me-md-2" fdprocessedid="0jwz6">Compose</button>
+              </a>
+              <% }else{ %>
+                <a href="/SignUp">
+                    <button type="button" class="btn btn-primary btn-lg px-4 me-md-2" fdprocessedid="0jwz6">Sign Up</button>
+                </a>
+                <a href="/login">
+                    <button type="button" class="btn btn-outline-secondary btn-lg px-4" fdprocessedid="fekupi">Login</button>
+                </a>
+              <% } %>
+            </div>
+          </div>
+        </div>
+      </div>
+
+<%- include("partials/footer.ejs") %>

@@ -1,0 +1,19 @@
+<%- include("./partials/header.ejs") %>
+<h1 style="text-align: center;">Contact Me</h1>
+<section class="flex" style="height: 500px; align-items: center;">
+  <form class="p-4 p-md-5 border rounded-3 bg-body-tertiary forms" style="width: 700px; height: 500px;">
+      <div class="form-floating mb-3">
+        <input type="text" class="form-control" id="floatingInput" placeholder="Name" fdprocessedid="tnjq6q" name="Name" required>
+        <label for="floatingInput">Name</label>
+      </div>
+      <div class="form-floating mb-3">
+          <input type="email" class="form-control"  placeholder="Email" fdprocessedid="pm0e9i" name="email" required>
+          <label for="floatingPassword">Email</label>
+        </div>
+        <div class="mb-3" style="width: 100%;">
+          <textarea class="form-control" id="exampleFormControlTextarea1" rows="5" name="Content" placeholder="Write your content here"></textarea>
+        </div>
+          <button class="w-100 btn btn-lg btn-primary" type="submit" fdprocessedid="ngw074">Submit</button>
+    </form>
+  </section>
+<%- include("partials/footer.ejs") %>

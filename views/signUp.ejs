@@ -1,0 +1,26 @@
+<%- include("partials/header.ejs") %>
+<section class="flex" style="height: 500px; align-items: center;">
+<form class="p-4 p-md-5 border rounded-3 bg-body-tertiary forms" action="/" method="post">
+    <div class="form-floating mb-3">
+      <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com" fdprocessedid="tnjq6q" name="email" required>
+      <label for="floatingInput">Email address</label>
+    </div>
+    <div class="form-floating mb-3">
+        <input type="text" class="form-control"  placeholder="username" fdprocessedid="pm0e9i" name="username" required>
+        <label for="floatingPassword">Username</label>
+      </div>
+    <div class="form-floating mb-3">
+      <input type="password" class="form-control" id="floatingPassword" placeholder="Password" fdprocessedid="pm0e9i" name="password" required>
+      <label for="floatingPassword">Password</label>
+    </div>
+    <div class="checkbox mb-3">
+      <label>
+        <input type="checkbox" value="remember-me"> Remember me
+      </label>
+    </div>
+        <button class="w-100 btn btn-lg btn-primary" type="submit" fdprocessedid="ngw074">Sign up</button>
+    <hr class="my-4">
+    <small class="text-body-secondary">By clicking Sign up, you agree to the terms of use.</small>
+  </form>
+</section>
+<%- include("partials/footer.ejs") %>
